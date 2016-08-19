@@ -51,7 +51,6 @@ execute "Install the Amazon ECS agent" do
            "--env=ECS_DATADIR=/data",
            "--env=ECS_CLUSTER=cluster_name",
            "--env=ECS_ENABLE_TASK_IAM_ROLE=true",
-           "--name ecs-agent",
            "-d",
            "-p 127.0.0.1:51678:51678",
            "amazon/amazon-ecs-agent:latest"].join(" ")
